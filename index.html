@@ -9,19 +9,33 @@
 </head>
 <body class="bg-info">
     <main>
-
+        
         <section>
-         <h1 class="visually-hidden">pokemon</h1>
-        <section>
-            <h2 class="visually-hidden">pokemon</h2>
-            <div class="container">
-                <p class="display-3 text-white text-center mt-3">POKEMON CARDS</p>
-                <div class="box mt-5"></div>
-            </div>
-        </section>
-    </main>
-    
-    <script src="./pokemons.js"></script>
-    <script src="./main.js"></script>
-</body>
-</html>
+            <h1 class="visually-hidden">pokemon</h1>
+            <section>
+                <h2 class="visually-hidden">pokemon</h2>
+                <div class="container">
+                    <p class="display-3 text-white text-center mt-3">POKEMON CARDS</p>
+                    <div class="box mt-5">
+                        <ul class="list list-unstyled row justify-content-center">
+                            
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <template class="template">
+            <li class="item d-flex flex-column align-items-center col-md-3 m-1 bg-success bg-gradient position-relative rounded-4">
+                <span class="number badge bg-danger bg-gradient position-absolute"></span>
+                <strong class="name mt-4 text-white"></strong>
+                <img class="img" alt="pokemon img">
+                <strong class="candy-name mb-5 text-white"></strong>
+                <time class="time position-absolute bottom-0 badge bg-primary bg-gradient" datetime="2022-02-02"></time>
+            </li>
+        </template>
+        
+        <script src="./pokemons.js"></script>
+        <script src="./main.js"></script>
+    </body>
+    </html>

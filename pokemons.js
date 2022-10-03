@@ -1,5 +1,4 @@
-var pokemons = [
-	{
+var pokemons = [{
 		id: 1,
 		num: '001',
 		name: 'Bulbasaur',
@@ -15,8 +14,7 @@ var pokemons = [
 		spawn_time: '20:00',
 		multipliers: [1.58],
 		weaknesses: ['Fire', 'Ice', 'Flying', 'Psychic'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '002',
 				name: 'Ivysaur',
 			},
@@ -42,18 +40,14 @@ var pokemons = [
 		spawn_time: '07:00',
 		multipliers: [1.2, 1.6],
 		weaknesses: ['Fire', 'Ice', 'Flying', 'Psychic'],
-		prev_evolution: [
-			{
-				num: '001',
-				name: 'Bulbasaur',
-			},
-		],
-		next_evolution: [
-			{
-				num: '003',
-				name: 'Venusaur',
-			},
-		],
+		prev_evolution: [{
+			num: '001',
+			name: 'Bulbasaur',
+		}, ],
+		next_evolution: [{
+			num: '003',
+			name: 'Venusaur',
+		}, ],
 	},
 	{
 		id: 3,
@@ -70,8 +64,7 @@ var pokemons = [
 		spawn_time: '11:30',
 		multipliers: null,
 		weaknesses: ['Fire', 'Ice', 'Flying', 'Psychic'],
-		prev_evolution: [
-			{
+		prev_evolution: [{
 				num: '001',
 				name: 'Bulbasaur',
 			},
@@ -97,8 +90,7 @@ var pokemons = [
 		spawn_time: '08:45',
 		multipliers: [1.65],
 		weaknesses: ['Water', 'Ground', 'Rock'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '005',
 				name: 'Charmeleon',
 			},
@@ -124,18 +116,14 @@ var pokemons = [
 		spawn_time: '19:00',
 		multipliers: [1.79],
 		weaknesses: ['Water', 'Ground', 'Rock'],
-		prev_evolution: [
-			{
-				num: '004',
-				name: 'Charmander',
-			},
-		],
-		next_evolution: [
-			{
-				num: '006',
-				name: 'Charizard',
-			},
-		],
+		prev_evolution: [{
+			num: '004',
+			name: 'Charmander',
+		}, ],
+		next_evolution: [{
+			num: '006',
+			name: 'Charizard',
+		}, ],
 	},
 	{
 		id: 6,
@@ -152,8 +140,7 @@ var pokemons = [
 		spawn_time: '13:34',
 		multipliers: null,
 		weaknesses: ['Water', 'Electric', 'Rock'],
-		prev_evolution: [
-			{
+		prev_evolution: [{
 				num: '004',
 				name: 'Charmander',
 			},
@@ -179,8 +166,7 @@ var pokemons = [
 		spawn_time: '04:25',
 		multipliers: [2.1],
 		weaknesses: ['Electric', 'Grass'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '008',
 				name: 'Wartortle',
 			},
@@ -206,18 +192,14 @@ var pokemons = [
 		spawn_time: '07:02',
 		multipliers: [1.4],
 		weaknesses: ['Electric', 'Grass'],
-		prev_evolution: [
-			{
-				num: '007',
-				name: 'Squirtle',
-			},
-		],
-		next_evolution: [
-			{
-				num: '009',
-				name: 'Blastoise',
-			},
-		],
+		prev_evolution: [{
+			num: '007',
+			name: 'Squirtle',
+		}, ],
+		next_evolution: [{
+			num: '009',
+			name: 'Blastoise',
+		}, ],
 	},
 	{
 		id: 9,
@@ -234,8 +216,7 @@ var pokemons = [
 		spawn_time: '00:06',
 		multipliers: null,
 		weaknesses: ['Electric', 'Grass'],
-		prev_evolution: [
-			{
+		prev_evolution: [{
 				num: '007',
 				name: 'Squirtle',
 			},
@@ -261,8 +242,7 @@ var pokemons = [
 		spawn_time: '16:35',
 		multipliers: [1.05],
 		weaknesses: ['Fire', 'Flying', 'Rock'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '011',
 				name: 'Metapod',
 			},
@@ -288,18 +268,14 @@ var pokemons = [
 		spawn_time: '02:11',
 		multipliers: [3.55, 3.79],
 		weaknesses: ['Fire', 'Flying', 'Rock'],
-		prev_evolution: [
-			{
-				num: '010',
-				name: 'Caterpie',
-			},
-		],
-		next_evolution: [
-			{
-				num: '012',
-				name: 'Butterfree',
-			},
-		],
+		prev_evolution: [{
+			num: '010',
+			name: 'Caterpie',
+		}, ],
+		next_evolution: [{
+			num: '012',
+			name: 'Butterfree',
+		}, ],
 	},
 	{
 		id: 12,
@@ -316,8 +292,7 @@ var pokemons = [
 		spawn_time: '05:23',
 		multipliers: null,
 		weaknesses: ['Fire', 'Electric', 'Ice', 'Flying', 'Rock'],
-		prev_evolution: [
-			{
+		prev_evolution: [{
 				num: '010',
 				name: 'Caterpie',
 			},
@@ -343,8 +318,7 @@ var pokemons = [
 		spawn_time: '02:21',
 		multipliers: [1.01, 1.09],
 		weaknesses: ['Fire', 'Flying', 'Psychic', 'Rock'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '014',
 				name: 'Kakuna',
 			},
@@ -370,18 +344,14 @@ var pokemons = [
 		spawn_time: '02:30',
 		multipliers: [3.01, 3.41],
 		weaknesses: ['Fire', 'Flying', 'Psychic', 'Rock'],
-		prev_evolution: [
-			{
-				num: '013',
-				name: 'Weedle',
-			},
-		],
-		next_evolution: [
-			{
-				num: '015',
-				name: 'Beedrill',
-			},
-		],
+		prev_evolution: [{
+			num: '013',
+			name: 'Weedle',
+		}, ],
+		next_evolution: [{
+			num: '015',
+			name: 'Beedrill',
+		}, ],
 	},
 	{
 		id: 15,
@@ -398,8 +368,7 @@ var pokemons = [
 		spawn_time: '04:50',
 		multipliers: null,
 		weaknesses: ['Fire', 'Flying', 'Psychic', 'Rock'],
-		prev_evolution: [
-			{
+		prev_evolution: [{
 				num: '013',
 				name: 'Weedle',
 			},
@@ -425,8 +394,7 @@ var pokemons = [
 		spawn_time: '01:34',
 		multipliers: [1.71, 1.92],
 		weaknesses: ['Electric', 'Rock'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '017',
 				name: 'Pidgeotto',
 			},
@@ -452,18 +420,14 @@ var pokemons = [
 		spawn_time: '01:30',
 		multipliers: [1.79],
 		weaknesses: ['Electric', 'Rock'],
-		prev_evolution: [
-			{
-				num: '016',
-				name: 'Pidgey',
-			},
-		],
-		next_evolution: [
-			{
-				num: '018',
-				name: 'Pidgeot',
-			},
-		],
+		prev_evolution: [{
+			num: '016',
+			name: 'Pidgey',
+		}, ],
+		next_evolution: [{
+			num: '018',
+			name: 'Pidgeot',
+		}, ],
 	},
 	{
 		id: 18,
@@ -480,8 +444,7 @@ var pokemons = [
 		spawn_time: '01:50',
 		multipliers: null,
 		weaknesses: ['Electric', 'Rock'],
-		prev_evolution: [
-			{
+		prev_evolution: [{
 				num: '016',
 				name: 'Pidgey',
 			},
@@ -507,12 +470,10 @@ var pokemons = [
 		spawn_time: '01:55',
 		multipliers: [2.55, 2.73],
 		weaknesses: ['Fighting'],
-		next_evolution: [
-			{
-				num: '020',
-				name: 'Raticate',
-			},
-		],
+		next_evolution: [{
+			num: '020',
+			name: 'Raticate',
+		}, ],
 	},
 	{
 		id: 20,
@@ -529,12 +490,10 @@ var pokemons = [
 		spawn_time: '01:56',
 		multipliers: null,
 		weaknesses: ['Fighting'],
-		prev_evolution: [
-			{
-				num: '019',
-				name: 'Rattata',
-			},
-		],
+		prev_evolution: [{
+			num: '019',
+			name: 'Rattata',
+		}, ],
 	},
 	{
 		id: 21,
@@ -552,12 +511,10 @@ var pokemons = [
 		spawn_time: '12:25',
 		multipliers: [2.66, 2.68],
 		weaknesses: ['Electric', 'Rock'],
-		next_evolution: [
-			{
-				num: '022',
-				name: 'Fearow',
-			},
-		],
+		next_evolution: [{
+			num: '022',
+			name: 'Fearow',
+		}, ],
 	},
 	{
 		id: 22,
@@ -574,12 +531,10 @@ var pokemons = [
 		spawn_time: '01:11',
 		multipliers: null,
 		weaknesses: ['Electric', 'Rock'],
-		prev_evolution: [
-			{
-				num: '021',
-				name: 'Spearow',
-			},
-		],
+		prev_evolution: [{
+			num: '021',
+			name: 'Spearow',
+		}, ],
 	},
 	{
 		id: 23,
@@ -597,12 +552,10 @@ var pokemons = [
 		spawn_time: '12:20',
 		multipliers: [2.21, 2.27],
 		weaknesses: ['Ground', 'Psychic'],
-		next_evolution: [
-			{
-				num: '024',
-				name: 'Arbok',
-			},
-		],
+		next_evolution: [{
+			num: '024',
+			name: 'Arbok',
+		}, ],
 	},
 	{
 		id: 24,
@@ -619,12 +572,10 @@ var pokemons = [
 		spawn_time: '01:50',
 		multipliers: null,
 		weaknesses: ['Ground', 'Psychic'],
-		prev_evolution: [
-			{
-				num: '023',
-				name: 'Ekans',
-			},
-		],
+		prev_evolution: [{
+			num: '023',
+			name: 'Ekans',
+		}, ],
 	},
 	{
 		id: 25,
@@ -642,12 +593,10 @@ var pokemons = [
 		spawn_time: '04:00',
 		multipliers: [2.34],
 		weaknesses: ['Ground'],
-		next_evolution: [
-			{
-				num: '026',
-				name: 'Raichu',
-			},
-		],
+		next_evolution: [{
+			num: '026',
+			name: 'Raichu',
+		}, ],
 	},
 	{
 		id: 26,
@@ -664,12 +613,10 @@ var pokemons = [
 		spawn_time: '23:58',
 		multipliers: null,
 		weaknesses: ['Ground'],
-		prev_evolution: [
-			{
-				num: '025',
-				name: 'Pikachu',
-			},
-		],
+		prev_evolution: [{
+			num: '025',
+			name: 'Pikachu',
+		}, ],
 	},
 	{
 		id: 27,
@@ -687,12 +634,10 @@ var pokemons = [
 		spawn_time: '01:58',
 		multipliers: [2.45],
 		weaknesses: ['Water', 'Grass', 'Ice'],
-		next_evolution: [
-			{
-				num: '028',
-				name: 'Sandslash',
-			},
-		],
+		next_evolution: [{
+			num: '028',
+			name: 'Sandslash',
+		}, ],
 	},
 	{
 		id: 28,
@@ -709,12 +654,10 @@ var pokemons = [
 		spawn_time: '12:34',
 		multipliers: null,
 		weaknesses: ['Water', 'Grass', 'Ice'],
-		prev_evolution: [
-			{
-				num: '027',
-				name: 'Sandshrew',
-			},
-		],
+		prev_evolution: [{
+			num: '027',
+			name: 'Sandshrew',
+		}, ],
 	},
 	{
 		id: 29,
@@ -732,8 +675,7 @@ var pokemons = [
 		spawn_time: '01:51',
 		multipliers: [1.63, 2.48],
 		weaknesses: ['Ground', 'Psychic'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '030',
 				name: 'Nidorina',
 			},
@@ -759,18 +701,14 @@ var pokemons = [
 		spawn_time: '07:22',
 		multipliers: [1.83, 2.48],
 		weaknesses: ['Ground', 'Psychic'],
-		prev_evolution: [
-			{
-				num: '029',
-				name: 'Nidoran(Female)',
-			},
-		],
-		next_evolution: [
-			{
-				num: '031',
-				name: 'Nidoqueen',
-			},
-		],
+		prev_evolution: [{
+			num: '029',
+			name: 'Nidoran(Female)',
+		}, ],
+		next_evolution: [{
+			num: '031',
+			name: 'Nidoqueen',
+		}, ],
 	},
 	{
 		id: 31,
@@ -787,8 +725,7 @@ var pokemons = [
 		spawn_time: '12:35',
 		multipliers: null,
 		weaknesses: ['Water', 'Ice', 'Ground', 'Psychic'],
-		prev_evolution: [
-			{
+		prev_evolution: [{
 				num: '029',
 				name: 'Nidoran(Female)',
 			},
@@ -814,8 +751,7 @@ var pokemons = [
 		spawn_time: '01:12',
 		multipliers: [1.64, 1.7],
 		weaknesses: ['Ground', 'Psychic'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '033',
 				name: 'Nidorino',
 			},
@@ -841,18 +777,14 @@ var pokemons = [
 		spawn_time: '09:02',
 		multipliers: [1.83],
 		weaknesses: ['Ground', 'Psychic'],
-		prev_evolution: [
-			{
-				num: '032',
-				name: 'Nidoran(Male)',
-			},
-		],
-		next_evolution: [
-			{
-				num: '034',
-				name: 'Nidoking',
-			},
-		],
+		prev_evolution: [{
+			num: '032',
+			name: 'Nidoran(Male)',
+		}, ],
+		next_evolution: [{
+			num: '034',
+			name: 'Nidoking',
+		}, ],
 	},
 	{
 		id: 34,
@@ -869,8 +801,7 @@ var pokemons = [
 		spawn_time: '12:16',
 		multipliers: null,
 		weaknesses: ['Water', 'Ice', 'Ground', 'Psychic'],
-		prev_evolution: [
-			{
+		prev_evolution: [{
 				num: '032',
 				name: 'Nidoran(Male)',
 			},
@@ -896,12 +827,10 @@ var pokemons = [
 		spawn_time: '03:30',
 		multipliers: [2.03, 2.14],
 		weaknesses: ['Fighting'],
-		next_evolution: [
-			{
-				num: '036',
-				name: 'Clefable',
-			},
-		],
+		next_evolution: [{
+			num: '036',
+			name: 'Clefable',
+		}, ],
 	},
 	{
 		id: 36,
@@ -918,12 +847,10 @@ var pokemons = [
 		spawn_time: '03:29',
 		multipliers: null,
 		weaknesses: ['Fighting'],
-		prev_evolution: [
-			{
-				num: '035',
-				name: 'Clefairy',
-			},
-		],
+		prev_evolution: [{
+			num: '035',
+			name: 'Clefairy',
+		}, ],
 	},
 	{
 		id: 37,
@@ -941,12 +868,10 @@ var pokemons = [
 		spawn_time: '13:43',
 		multipliers: [2.74, 2.81],
 		weaknesses: ['Water', 'Ground', 'Rock'],
-		next_evolution: [
-			{
-				num: '038',
-				name: 'Ninetales',
-			},
-		],
+		next_evolution: [{
+			num: '038',
+			name: 'Ninetales',
+		}, ],
 	},
 	{
 		id: 38,
@@ -963,12 +888,10 @@ var pokemons = [
 		spawn_time: '01:32',
 		multipliers: null,
 		weaknesses: ['Water', 'Ground', 'Rock'],
-		prev_evolution: [
-			{
-				num: '037',
-				name: 'Vulpix',
-			},
-		],
+		prev_evolution: [{
+			num: '037',
+			name: 'Vulpix',
+		}, ],
 	},
 	{
 		id: 39,
@@ -986,12 +909,10 @@ var pokemons = [
 		spawn_time: '08:46',
 		multipliers: [1.85],
 		weaknesses: ['Fighting'],
-		next_evolution: [
-			{
-				num: '040',
-				name: 'Wigglytuff',
-			},
-		],
+		next_evolution: [{
+			num: '040',
+			name: 'Wigglytuff',
+		}, ],
 	},
 	{
 		id: 40,
@@ -1008,12 +929,10 @@ var pokemons = [
 		spawn_time: '12:28',
 		multipliers: null,
 		weaknesses: ['Fighting'],
-		prev_evolution: [
-			{
-				num: '039',
-				name: 'Jigglypuff',
-			},
-		],
+		prev_evolution: [{
+			num: '039',
+			name: 'Jigglypuff',
+		}, ],
 	},
 	{
 		id: 41,
@@ -1031,12 +950,10 @@ var pokemons = [
 		spawn_time: '12:28',
 		multipliers: [2.6, 3.67],
 		weaknesses: ['Electric', 'Ice', 'Psychic', 'Rock'],
-		next_evolution: [
-			{
-				num: '042',
-				name: 'Golbat',
-			},
-		],
+		next_evolution: [{
+			num: '042',
+			name: 'Golbat',
+		}, ],
 	},
 	{
 		id: 42,
@@ -1053,12 +970,10 @@ var pokemons = [
 		spawn_time: '02:15',
 		multipliers: null,
 		weaknesses: ['Electric', 'Ice', 'Psychic', 'Rock'],
-		prev_evolution: [
-			{
-				num: '041',
-				name: 'Zubat',
-			},
-		],
+		prev_evolution: [{
+			num: '041',
+			name: 'Zubat',
+		}, ],
 	},
 	{
 		id: 43,
@@ -1076,8 +991,7 @@ var pokemons = [
 		spawn_time: '03:58',
 		multipliers: [1.5],
 		weaknesses: ['Fire', 'Ice', 'Flying', 'Psychic'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '044',
 				name: 'Gloom',
 			},
@@ -1103,18 +1017,14 @@ var pokemons = [
 		spawn_time: '11:33',
 		multipliers: [1.49],
 		weaknesses: ['Fire', 'Ice', 'Flying', 'Psychic'],
-		prev_evolution: [
-			{
-				num: '043',
-				name: 'Oddish',
-			},
-		],
-		next_evolution: [
-			{
-				num: '045',
-				name: 'Vileplume',
-			},
-		],
+		prev_evolution: [{
+			num: '043',
+			name: 'Oddish',
+		}, ],
+		next_evolution: [{
+			num: '045',
+			name: 'Vileplume',
+		}, ],
 	},
 	{
 		id: 45,
@@ -1131,8 +1041,7 @@ var pokemons = [
 		spawn_time: '23:58',
 		multipliers: null,
 		weaknesses: ['Fire', 'Ice', 'Flying', 'Psychic'],
-		prev_evolution: [
-			{
+		prev_evolution: [{
 				num: '043',
 				name: 'Oddish',
 			},
@@ -1158,12 +1067,10 @@ var pokemons = [
 		spawn_time: '01:42',
 		multipliers: [2.02],
 		weaknesses: ['Fire', 'Ice', 'Poison', 'Flying', 'Bug', 'Rock'],
-		next_evolution: [
-			{
-				num: '047',
-				name: 'Parasect',
-			},
-		],
+		next_evolution: [{
+			num: '047',
+			name: 'Parasect',
+		}, ],
 	},
 	{
 		id: 47,
@@ -1180,12 +1087,10 @@ var pokemons = [
 		spawn_time: '01:22',
 		multipliers: null,
 		weaknesses: ['Fire', 'Ice', 'Poison', 'Flying', 'Bug', 'Rock'],
-		prev_evolution: [
-			{
-				num: '046',
-				name: 'Paras',
-			},
-		],
+		prev_evolution: [{
+			num: '046',
+			name: 'Paras',
+		}, ],
 	},
 	{
 		id: 48,
@@ -1203,12 +1108,10 @@ var pokemons = [
 		spawn_time: '02:31',
 		multipliers: [1.86, 1.9],
 		weaknesses: ['Fire', 'Flying', 'Psychic', 'Rock'],
-		next_evolution: [
-			{
-				num: '049',
-				name: 'Venomoth',
-			},
-		],
+		next_evolution: [{
+			num: '049',
+			name: 'Venomoth',
+		}, ],
 	},
 	{
 		id: 49,
@@ -1225,12 +1128,10 @@ var pokemons = [
 		spawn_time: '23:40',
 		multipliers: null,
 		weaknesses: ['Fire', 'Flying', 'Psychic', 'Rock'],
-		prev_evolution: [
-			{
-				num: '048',
-				name: 'Venonat',
-			},
-		],
+		prev_evolution: [{
+			num: '048',
+			name: 'Venonat',
+		}, ],
 	},
 	{
 		id: 50,
@@ -1248,12 +1149,10 @@ var pokemons = [
 		spawn_time: '02:22',
 		multipliers: [2.69],
 		weaknesses: ['Water', 'Grass', 'Ice'],
-		next_evolution: [
-			{
-				num: '051',
-				name: 'Dugtrio',
-			},
-		],
+		next_evolution: [{
+			num: '051',
+			name: 'Dugtrio',
+		}, ],
 	},
 	{
 		id: 51,
@@ -1270,12 +1169,10 @@ var pokemons = [
 		spawn_time: '12:37',
 		multipliers: null,
 		weaknesses: ['Water', 'Grass', 'Ice'],
-		prev_evolution: [
-			{
-				num: '050',
-				name: 'Diglett',
-			},
-		],
+		prev_evolution: [{
+			num: '050',
+			name: 'Diglett',
+		}, ],
 	},
 	{
 		id: 52,
@@ -1293,12 +1190,10 @@ var pokemons = [
 		spawn_time: '02:54',
 		multipliers: [1.98],
 		weaknesses: ['Fighting'],
-		next_evolution: [
-			{
-				num: '053',
-				name: 'Persian',
-			},
-		],
+		next_evolution: [{
+			num: '053',
+			name: 'Persian',
+		}, ],
 	},
 	{
 		id: 53,
@@ -1315,12 +1210,10 @@ var pokemons = [
 		spawn_time: '02:44',
 		multipliers: null,
 		weaknesses: ['Fighting'],
-		prev_evolution: [
-			{
-				num: '052',
-				name: 'Meowth',
-			},
-		],
+		prev_evolution: [{
+			num: '052',
+			name: 'Meowth',
+		}, ],
 	},
 	{
 		id: 54,
@@ -1338,12 +1231,10 @@ var pokemons = [
 		spawn_time: '03:41',
 		multipliers: [2.27],
 		weaknesses: ['Electric', 'Grass'],
-		next_evolution: [
-			{
-				num: '055',
-				name: 'Golduck',
-			},
-		],
+		next_evolution: [{
+			num: '055',
+			name: 'Golduck',
+		}, ],
 	},
 	{
 		id: 55,
@@ -1360,12 +1251,10 @@ var pokemons = [
 		spawn_time: '23:06',
 		multipliers: null,
 		weaknesses: ['Electric', 'Grass'],
-		prev_evolution: [
-			{
-				num: '054',
-				name: 'Psyduck',
-			},
-		],
+		prev_evolution: [{
+			num: '054',
+			name: 'Psyduck',
+		}, ],
 	},
 	{
 		id: 56,
@@ -1383,12 +1272,10 @@ var pokemons = [
 		spawn_time: '12:52',
 		multipliers: [2.17, 2.28],
 		weaknesses: ['Flying', 'Psychic', 'Fairy'],
-		next_evolution: [
-			{
-				num: '057',
-				name: 'Primeape',
-			},
-		],
+		next_evolution: [{
+			num: '057',
+			name: 'Primeape',
+		}, ],
 	},
 	{
 		id: 57,
@@ -1405,12 +1292,10 @@ var pokemons = [
 		spawn_time: '12:33',
 		multipliers: null,
 		weaknesses: ['Flying', 'Psychic', 'Fairy'],
-		prev_evolution: [
-			{
-				num: '056',
-				name: 'Mankey',
-			},
-		],
+		prev_evolution: [{
+			num: '056',
+			name: 'Mankey',
+		}, ],
 	},
 	{
 		id: 58,
@@ -1428,12 +1313,10 @@ var pokemons = [
 		spawn_time: '03:57',
 		multipliers: [2.31, 2.36],
 		weaknesses: ['Water', 'Ground', 'Rock'],
-		next_evolution: [
-			{
-				num: '059',
-				name: 'Arcanine',
-			},
-		],
+		next_evolution: [{
+			num: '059',
+			name: 'Arcanine',
+		}, ],
 	},
 	{
 		id: 59,
@@ -1450,12 +1333,10 @@ var pokemons = [
 		spawn_time: '03:11',
 		multipliers: null,
 		weaknesses: ['Water', 'Ground', 'Rock'],
-		prev_evolution: [
-			{
-				num: '058',
-				name: 'Growlithe',
-			},
-		],
+		prev_evolution: [{
+			num: '058',
+			name: 'Growlithe',
+		}, ],
 	},
 	{
 		id: 60,
@@ -1473,8 +1354,7 @@ var pokemons = [
 		spawn_time: '03:40',
 		multipliers: [1.72, 1.73],
 		weaknesses: ['Electric', 'Grass'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '061',
 				name: 'Poliwhirl',
 			},
@@ -1500,18 +1380,14 @@ var pokemons = [
 		spawn_time: '09:14',
 		multipliers: [1.95],
 		weaknesses: ['Electric', 'Grass'],
-		prev_evolution: [
-			{
-				num: '060',
-				name: 'Poliwag',
-			},
-		],
-		next_evolution: [
-			{
-				num: '062',
-				name: 'Poliwrath',
-			},
-		],
+		prev_evolution: [{
+			num: '060',
+			name: 'Poliwag',
+		}, ],
+		next_evolution: [{
+			num: '062',
+			name: 'Poliwrath',
+		}, ],
 	},
 	{
 		id: 62,
@@ -1528,8 +1404,7 @@ var pokemons = [
 		spawn_time: '01:32',
 		multipliers: null,
 		weaknesses: ['Electric', 'Grass', 'Flying', 'Psychic', 'Fairy'],
-		prev_evolution: [
-			{
+		prev_evolution: [{
 				num: '060',
 				name: 'Poliwag',
 			},
@@ -1555,8 +1430,7 @@ var pokemons = [
 		spawn_time: '04:30',
 		multipliers: [1.36, 1.95],
 		weaknesses: ['Bug', 'Ghost', 'Dark'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '064',
 				name: 'Kadabra',
 			},
@@ -1582,18 +1456,14 @@ var pokemons = [
 		spawn_time: '11:25',
 		multipliers: [1.4],
 		weaknesses: ['Bug', 'Ghost', 'Dark'],
-		prev_evolution: [
-			{
-				num: '063',
-				name: 'Abra',
-			},
-		],
-		next_evolution: [
-			{
-				num: '065',
-				name: 'Alakazam',
-			},
-		],
+		prev_evolution: [{
+			num: '063',
+			name: 'Abra',
+		}, ],
+		next_evolution: [{
+			num: '065',
+			name: 'Alakazam',
+		}, ],
 	},
 	{
 		id: 65,
@@ -1610,8 +1480,7 @@ var pokemons = [
 		spawn_time: '12:33',
 		multipliers: null,
 		weaknesses: ['Bug', 'Ghost', 'Dark'],
-		prev_evolution: [
-			{
+		prev_evolution: [{
 				num: '063',
 				name: 'Abra',
 			},
@@ -1637,8 +1506,7 @@ var pokemons = [
 		spawn_time: '01:55',
 		multipliers: [1.64, 1.65],
 		weaknesses: ['Flying', 'Psychic', 'Fairy'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '067',
 				name: 'Machoke',
 			},
@@ -1664,18 +1532,14 @@ var pokemons = [
 		spawn_time: '10:32',
 		multipliers: [1.7],
 		weaknesses: ['Flying', 'Psychic', 'Fairy'],
-		prev_evolution: [
-			{
-				num: '066',
-				name: 'Machop',
-			},
-		],
-		next_evolution: [
-			{
-				num: '068',
-				name: 'Machamp',
-			},
-		],
+		prev_evolution: [{
+			num: '066',
+			name: 'Machop',
+		}, ],
+		next_evolution: [{
+			num: '068',
+			name: 'Machamp',
+		}, ],
 	},
 	{
 		id: 68,
@@ -1692,8 +1556,7 @@ var pokemons = [
 		spawn_time: '02:55',
 		multipliers: null,
 		weaknesses: ['Flying', 'Psychic', 'Fairy'],
-		prev_evolution: [
-			{
+		prev_evolution: [{
 				num: '066',
 				name: 'Machop',
 			},
@@ -1719,8 +1582,7 @@ var pokemons = [
 		spawn_time: '04:10',
 		multipliers: [1.57],
 		weaknesses: ['Fire', 'Ice', 'Flying', 'Psychic'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '070',
 				name: 'Weepinbell',
 			},
@@ -1746,18 +1608,14 @@ var pokemons = [
 		spawn_time: '09:45',
 		multipliers: [1.59],
 		weaknesses: ['Fire', 'Ice', 'Flying', 'Psychic'],
-		prev_evolution: [
-			{
-				num: '069',
-				name: 'Bellsprout',
-			},
-		],
-		next_evolution: [
-			{
-				num: '071',
-				name: 'Victreebel',
-			},
-		],
+		prev_evolution: [{
+			num: '069',
+			name: 'Bellsprout',
+		}, ],
+		next_evolution: [{
+			num: '071',
+			name: 'Victreebel',
+		}, ],
 	},
 	{
 		id: 71,
@@ -1774,8 +1632,7 @@ var pokemons = [
 		spawn_time: '12:19',
 		multipliers: null,
 		weaknesses: ['Fire', 'Ice', 'Flying', 'Psychic'],
-		prev_evolution: [
-			{
+		prev_evolution: [{
 				num: '069',
 				name: 'Bellsprout',
 			},
@@ -1801,12 +1658,10 @@ var pokemons = [
 		spawn_time: '03:20',
 		multipliers: [2.52],
 		weaknesses: ['Electric', 'Ground', 'Psychic'],
-		next_evolution: [
-			{
-				num: '073',
-				name: 'Tentacruel',
-			},
-		],
+		next_evolution: [{
+			num: '073',
+			name: 'Tentacruel',
+		}, ],
 	},
 	{
 		id: 73,
@@ -1823,12 +1678,10 @@ var pokemons = [
 		spawn_time: '23:36',
 		multipliers: null,
 		weaknesses: ['Electric', 'Ground', 'Psychic'],
-		prev_evolution: [
-			{
-				num: '072',
-				name: 'Tentacool',
-			},
-		],
+		prev_evolution: [{
+			num: '072',
+			name: 'Tentacool',
+		}, ],
 	},
 	{
 		id: 74,
@@ -1846,8 +1699,7 @@ var pokemons = [
 		spawn_time: '12:40',
 		multipliers: [1.75, 1.76],
 		weaknesses: ['Water', 'Grass', 'Ice', 'Fighting', 'Ground', 'Steel'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '075',
 				name: 'Graveler',
 			},
@@ -1873,18 +1725,14 @@ var pokemons = [
 		spawn_time: '04:53',
 		multipliers: [1.64, 1.72],
 		weaknesses: ['Water', 'Grass', 'Ice', 'Fighting', 'Ground', 'Steel'],
-		prev_evolution: [
-			{
-				num: '074',
-				name: 'Geodude',
-			},
-		],
-		next_evolution: [
-			{
-				num: '076',
-				name: 'Golem',
-			},
-		],
+		prev_evolution: [{
+			num: '074',
+			name: 'Geodude',
+		}, ],
+		next_evolution: [{
+			num: '076',
+			name: 'Golem',
+		}, ],
 	},
 	{
 		id: 76,
@@ -1901,8 +1749,7 @@ var pokemons = [
 		spawn_time: '12:16',
 		multipliers: null,
 		weaknesses: ['Water', 'Grass', 'Ice', 'Fighting', 'Ground', 'Steel'],
-		prev_evolution: [
-			{
+		prev_evolution: [{
 				num: '074',
 				name: 'Geodude',
 			},
@@ -1928,12 +1775,10 @@ var pokemons = [
 		spawn_time: '02:50',
 		multipliers: [1.48, 1.5],
 		weaknesses: ['Water', 'Ground', 'Rock'],
-		next_evolution: [
-			{
-				num: '078',
-				name: 'Rapidash',
-			},
-		],
+		next_evolution: [{
+			num: '078',
+			name: 'Rapidash',
+		}, ],
 	},
 	{
 		id: 78,
@@ -1950,12 +1795,10 @@ var pokemons = [
 		spawn_time: '04:00',
 		multipliers: null,
 		weaknesses: ['Water', 'Ground', 'Rock'],
-		prev_evolution: [
-			{
-				num: '077',
-				name: 'Ponyta',
-			},
-		],
+		prev_evolution: [{
+			num: '077',
+			name: 'Ponyta',
+		}, ],
 	},
 	{
 		id: 79,
@@ -1973,12 +1816,10 @@ var pokemons = [
 		spawn_time: '07:12',
 		multipliers: [2.21],
 		weaknesses: ['Electric', 'Grass', 'Bug', 'Ghost', 'Dark'],
-		next_evolution: [
-			{
-				num: '080',
-				name: 'Slowbro',
-			},
-		],
+		next_evolution: [{
+			num: '080',
+			name: 'Slowbro',
+		}, ],
 	},
 	{
 		id: 80,
@@ -1995,12 +1836,10 @@ var pokemons = [
 		spawn_time: '02:56',
 		multipliers: null,
 		weaknesses: ['Electric', 'Grass', 'Bug', 'Ghost', 'Dark'],
-		prev_evolution: [
-			{
-				num: '079',
-				name: 'Slowpoke',
-			},
-		],
+		prev_evolution: [{
+			num: '079',
+			name: 'Slowpoke',
+		}, ],
 	},
 	{
 		id: 81,
@@ -2018,12 +1857,10 @@ var pokemons = [
 		spawn_time: '04:04',
 		multipliers: [2.16, 2.17],
 		weaknesses: ['Fire', 'Water', 'Ground'],
-		next_evolution: [
-			{
-				num: '082',
-				name: 'Magneton',
-			},
-		],
+		next_evolution: [{
+			num: '082',
+			name: 'Magneton',
+		}, ],
 	},
 	{
 		id: 82,
@@ -2040,12 +1877,10 @@ var pokemons = [
 		spawn_time: '15:25',
 		multipliers: null,
 		weaknesses: ['Fire', 'Water', 'Ground'],
-		prev_evolution: [
-			{
-				num: '081',
-				name: 'Magnemite',
-			},
-		],
+		prev_evolution: [{
+			num: '081',
+			name: 'Magnemite',
+		}, ],
 	},
 	{
 		id: 83,
@@ -2079,12 +1914,10 @@ var pokemons = [
 		spawn_time: '05:10',
 		multipliers: [2.19, 2.24],
 		weaknesses: ['Electric', 'Rock'],
-		next_evolution: [
-			{
-				num: '085',
-				name: 'Dodrio',
-			},
-		],
+		next_evolution: [{
+			num: '085',
+			name: 'Dodrio',
+		}, ],
 	},
 	{
 		id: 85,
@@ -2101,12 +1934,10 @@ var pokemons = [
 		spawn_time: '02:12',
 		multipliers: null,
 		weaknesses: ['Electric', 'Rock'],
-		prev_evolution: [
-			{
-				num: '084',
-				name: 'Doduo',
-			},
-		],
+		prev_evolution: [{
+			num: '084',
+			name: 'Doduo',
+		}, ],
 	},
 	{
 		id: 86,
@@ -2124,12 +1955,10 @@ var pokemons = [
 		spawn_time: '06:46',
 		multipliers: [1.04, 1.96],
 		weaknesses: ['Electric', 'Grass'],
-		next_evolution: [
-			{
-				num: '087',
-				name: 'Dewgong',
-			},
-		],
+		next_evolution: [{
+			num: '087',
+			name: 'Dewgong',
+		}, ],
 	},
 	{
 		id: 87,
@@ -2146,12 +1975,10 @@ var pokemons = [
 		spawn_time: '06:04',
 		multipliers: null,
 		weaknesses: ['Electric', 'Grass', 'Fighting', 'Rock'],
-		prev_evolution: [
-			{
-				num: '086',
-				name: 'Seel',
-			},
-		],
+		prev_evolution: [{
+			num: '086',
+			name: 'Seel',
+		}, ],
 	},
 	{
 		id: 88,
@@ -2169,12 +1996,10 @@ var pokemons = [
 		spawn_time: '15:11',
 		multipliers: [2.44],
 		weaknesses: ['Ground', 'Psychic'],
-		next_evolution: [
-			{
-				num: '089',
-				name: 'Muk',
-			},
-		],
+		next_evolution: [{
+			num: '089',
+			name: 'Muk',
+		}, ],
 	},
 	{
 		id: 89,
@@ -2191,12 +2016,10 @@ var pokemons = [
 		spawn_time: '01:28',
 		multipliers: null,
 		weaknesses: ['Ground', 'Psychic'],
-		prev_evolution: [
-			{
-				num: '088',
-				name: 'Grimer',
-			},
-		],
+		prev_evolution: [{
+			num: '088',
+			name: 'Grimer',
+		}, ],
 	},
 	{
 		id: 90,
@@ -2214,12 +2037,10 @@ var pokemons = [
 		spawn_time: '07:39',
 		multipliers: [2.65],
 		weaknesses: ['Electric', 'Grass'],
-		next_evolution: [
-			{
-				num: '091',
-				name: 'Cloyster',
-			},
-		],
+		next_evolution: [{
+			num: '091',
+			name: 'Cloyster',
+		}, ],
 	},
 	{
 		id: 91,
@@ -2236,12 +2057,10 @@ var pokemons = [
 		spawn_time: '02:33',
 		multipliers: null,
 		weaknesses: ['Electric', 'Grass', 'Fighting', 'Rock'],
-		prev_evolution: [
-			{
-				num: '090',
-				name: 'Shellder',
-			},
-		],
+		prev_evolution: [{
+			num: '090',
+			name: 'Shellder',
+		}, ],
 	},
 	{
 		id: 92,
@@ -2259,8 +2078,7 @@ var pokemons = [
 		spawn_time: '04:21',
 		multipliers: [1.78],
 		weaknesses: ['Ground', 'Psychic', 'Ghost', 'Dark'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '093',
 				name: 'Haunter',
 			},
@@ -2286,18 +2104,14 @@ var pokemons = [
 		spawn_time: '00:10',
 		multipliers: [1.56, 1.8],
 		weaknesses: ['Ground', 'Psychic', 'Ghost', 'Dark'],
-		prev_evolution: [
-			{
-				num: '092',
-				name: 'Gastly',
-			},
-		],
-		next_evolution: [
-			{
-				num: '094',
-				name: 'Gengar',
-			},
-		],
+		prev_evolution: [{
+			num: '092',
+			name: 'Gastly',
+		}, ],
+		next_evolution: [{
+			num: '094',
+			name: 'Gengar',
+		}, ],
 	},
 	{
 		id: 94,
@@ -2314,8 +2128,7 @@ var pokemons = [
 		spawn_time: '03:55',
 		multipliers: null,
 		weaknesses: ['Ground', 'Psychic', 'Ghost', 'Dark'],
-		prev_evolution: [
-			{
+		prev_evolution: [{
 				num: '092',
 				name: 'Gastly',
 			},
@@ -2357,12 +2170,10 @@ var pokemons = [
 		spawn_time: '01:51',
 		multipliers: [2.08, 2.09],
 		weaknesses: ['Bug', 'Ghost', 'Dark'],
-		next_evolution: [
-			{
-				num: '097',
-				name: 'Hypno',
-			},
-		],
+		next_evolution: [{
+			num: '097',
+			name: 'Hypno',
+		}, ],
 	},
 	{
 		id: 97,
@@ -2379,12 +2190,10 @@ var pokemons = [
 		spawn_time: '02:17',
 		multipliers: null,
 		weaknesses: ['Bug', 'Ghost', 'Dark'],
-		prev_evolution: [
-			{
-				num: '096',
-				name: 'Drowzee',
-			},
-		],
+		prev_evolution: [{
+			num: '096',
+			name: 'Drowzee',
+		}, ],
 	},
 	{
 		id: 98,
@@ -2402,12 +2211,10 @@ var pokemons = [
 		spawn_time: '03:33',
 		multipliers: [2.36, 2.4],
 		weaknesses: ['Electric', 'Grass'],
-		next_evolution: [
-			{
-				num: '099',
-				name: 'Kingler',
-			},
-		],
+		next_evolution: [{
+			num: '099',
+			name: 'Kingler',
+		}, ],
 	},
 	{
 		id: 99,
@@ -2424,12 +2231,10 @@ var pokemons = [
 		spawn_time: '03:44',
 		multipliers: null,
 		weaknesses: ['Electric', 'Grass'],
-		prev_evolution: [
-			{
-				num: '098',
-				name: 'Krabby',
-			},
-		],
+		prev_evolution: [{
+			num: '098',
+			name: 'Krabby',
+		}, ],
 	},
 	{
 		id: 100,
@@ -2447,12 +2252,10 @@ var pokemons = [
 		spawn_time: '04:36',
 		multipliers: [2.01, 2.02],
 		weaknesses: ['Ground'],
-		next_evolution: [
-			{
-				num: '101',
-				name: 'Electrode',
-			},
-		],
+		next_evolution: [{
+			num: '101',
+			name: 'Electrode',
+		}, ],
 	},
 	{
 		id: 101,
@@ -2469,12 +2272,10 @@ var pokemons = [
 		spawn_time: '04:10',
 		multipliers: null,
 		weaknesses: ['Ground'],
-		prev_evolution: [
-			{
-				num: '100',
-				name: 'Voltorb',
-			},
-		],
+		prev_evolution: [{
+			num: '100',
+			name: 'Voltorb',
+		}, ],
 	},
 	{
 		id: 102,
@@ -2492,12 +2293,10 @@ var pokemons = [
 		spawn_time: '09:09',
 		multipliers: [2.7, 3.18],
 		weaknesses: ['Fire', 'Ice', 'Poison', 'Flying', 'Bug', 'Ghost', 'Dark'],
-		next_evolution: [
-			{
-				num: '103',
-				name: 'Exeggutor',
-			},
-		],
+		next_evolution: [{
+			num: '103',
+			name: 'Exeggutor',
+		}, ],
 	},
 	{
 		id: 103,
@@ -2514,12 +2313,10 @@ var pokemons = [
 		spawn_time: '12:34',
 		multipliers: null,
 		weaknesses: ['Fire', 'Ice', 'Poison', 'Flying', 'Bug', 'Ghost', 'Dark'],
-		prev_evolution: [
-			{
-				num: '102',
-				name: 'Exeggcute',
-			},
-		],
+		prev_evolution: [{
+			num: '102',
+			name: 'Exeggcute',
+		}, ],
 	},
 	{
 		id: 104,
@@ -2537,12 +2334,10 @@ var pokemons = [
 		spawn_time: '01:51',
 		multipliers: [1.67],
 		weaknesses: ['Water', 'Grass', 'Ice'],
-		next_evolution: [
-			{
-				num: '105',
-				name: 'Marowak',
-			},
-		],
+		next_evolution: [{
+			num: '105',
+			name: 'Marowak',
+		}, ],
 	},
 	{
 		id: 105,
@@ -2559,12 +2354,10 @@ var pokemons = [
 		spawn_time: '03:59',
 		multipliers: null,
 		weaknesses: ['Water', 'Grass', 'Ice'],
-		prev_evolution: [
-			{
-				num: '104',
-				name: 'Cubone',
-			},
-		],
+		prev_evolution: [{
+			num: '104',
+			name: 'Cubone',
+		}, ],
 	},
 	{
 		id: 106,
@@ -2630,12 +2423,10 @@ var pokemons = [
 		spawn_time: '08:16',
 		multipliers: [1.11],
 		weaknesses: ['Ground', 'Psychic'],
-		next_evolution: [
-			{
-				num: '110',
-				name: 'Weezing',
-			},
-		],
+		next_evolution: [{
+			num: '110',
+			name: 'Weezing',
+		}, ],
 	},
 	{
 		id: 110,
@@ -2652,12 +2443,10 @@ var pokemons = [
 		spawn_time: '12:17',
 		multipliers: null,
 		weaknesses: ['Ground', 'Psychic'],
-		prev_evolution: [
-			{
-				num: '109',
-				name: 'Koffing',
-			},
-		],
+		prev_evolution: [{
+			num: '109',
+			name: 'Koffing',
+		}, ],
 	},
 	{
 		id: 111,
@@ -2675,12 +2464,10 @@ var pokemons = [
 		spawn_time: '03:21',
 		multipliers: [1.91],
 		weaknesses: ['Water', 'Grass', 'Ice', 'Fighting', 'Ground', 'Steel'],
-		next_evolution: [
-			{
-				num: '112',
-				name: 'Rhydon',
-			},
-		],
+		next_evolution: [{
+			num: '112',
+			name: 'Rhydon',
+		}, ],
 	},
 	{
 		id: 112,
@@ -2697,12 +2484,10 @@ var pokemons = [
 		spawn_time: '05:50',
 		multipliers: null,
 		weaknesses: ['Water', 'Grass', 'Ice', 'Fighting', 'Ground', 'Steel'],
-		prev_evolution: [
-			{
-				num: '111',
-				name: 'Rhyhorn',
-			},
-		],
+		prev_evolution: [{
+			num: '111',
+			name: 'Rhyhorn',
+		}, ],
 	},
 	{
 		id: 113,
@@ -2768,12 +2553,10 @@ var pokemons = [
 		spawn_time: '02:53',
 		multipliers: [2.23],
 		weaknesses: ['Electric', 'Grass'],
-		next_evolution: [
-			{
-				num: '117',
-				name: 'Seadra',
-			},
-		],
+		next_evolution: [{
+			num: '117',
+			name: 'Seadra',
+		}, ],
 	},
 	{
 		id: 117,
@@ -2790,12 +2573,10 @@ var pokemons = [
 		spawn_time: '03:18',
 		multipliers: null,
 		weaknesses: ['Electric', 'Grass'],
-		prev_evolution: [
-			{
-				num: '116',
-				name: 'Horsea',
-			},
-		],
+		prev_evolution: [{
+			num: '116',
+			name: 'Horsea',
+		}, ],
 	},
 	{
 		id: 118,
@@ -2813,12 +2594,10 @@ var pokemons = [
 		spawn_time: '03:14',
 		multipliers: [2.15, 2.2],
 		weaknesses: ['Electric', 'Grass'],
-		next_evolution: [
-			{
-				num: '119',
-				name: 'Seaking',
-			},
-		],
+		next_evolution: [{
+			num: '119',
+			name: 'Seaking',
+		}, ],
 	},
 	{
 		id: 119,
@@ -2835,12 +2614,10 @@ var pokemons = [
 		spawn_time: '05:21',
 		multipliers: null,
 		weaknesses: ['Electric', 'Grass'],
-		prev_evolution: [
-			{
-				num: '118',
-				name: 'Goldeen',
-			},
-		],
+		prev_evolution: [{
+			num: '118',
+			name: 'Goldeen',
+		}, ],
 	},
 	{
 		id: 120,
@@ -2858,12 +2635,10 @@ var pokemons = [
 		spawn_time: '22:59',
 		multipliers: [2.38, 2.41],
 		weaknesses: ['Electric', 'Grass'],
-		next_evolution: [
-			{
-				num: '121',
-				name: 'Starmie',
-			},
-		],
+		next_evolution: [{
+			num: '121',
+			name: 'Starmie',
+		}, ],
 	},
 	{
 		id: 121,
@@ -2880,12 +2655,10 @@ var pokemons = [
 		spawn_time: '06:57',
 		multipliers: null,
 		weaknesses: ['Electric', 'Grass', 'Bug', 'Ghost', 'Dark'],
-		prev_evolution: [
-			{
-				num: '120',
-				name: 'Staryu',
-			},
-		],
+		prev_evolution: [{
+			num: '120',
+			name: 'Staryu',
+		}, ],
 	},
 	{
 		id: 122,
@@ -3015,12 +2788,10 @@ var pokemons = [
 		spawn_time: '14:26',
 		multipliers: [10.1, 11.8],
 		weaknesses: ['Electric', 'Grass'],
-		next_evolution: [
-			{
-				num: '130',
-				name: 'Gyarados',
-			},
-		],
+		next_evolution: [{
+			num: '130',
+			name: 'Gyarados',
+		}, ],
 	},
 	{
 		id: 130,
@@ -3037,12 +2808,10 @@ var pokemons = [
 		spawn_time: '02:15',
 		multipliers: null,
 		weaknesses: ['Electric', 'Rock'],
-		prev_evolution: [
-			{
-				num: '129',
-				name: 'Magikarp',
-			},
-		],
+		prev_evolution: [{
+			num: '129',
+			name: 'Magikarp',
+		}, ],
 	},
 	{
 		id: 131,
@@ -3092,8 +2861,7 @@ var pokemons = [
 		spawn_time: '05:32',
 		multipliers: [2.02, 2.64],
 		weaknesses: ['Fighting'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '134',
 				name: 'Vaporeon',
 			},
@@ -3122,12 +2890,10 @@ var pokemons = [
 		spawn_time: '10:54',
 		multipliers: null,
 		weaknesses: ['Electric', 'Grass'],
-		prev_evolution: [
-			{
-				num: '133',
-				name: 'Eevee',
-			},
-		],
+		prev_evolution: [{
+			num: '133',
+			name: 'Eevee',
+		}, ],
 	},
 	{
 		id: 135,
@@ -3144,12 +2910,10 @@ var pokemons = [
 		spawn_time: '02:30',
 		multipliers: null,
 		weaknesses: ['Ground'],
-		prev_evolution: [
-			{
-				num: '133',
-				name: 'Eevee',
-			},
-		],
+		prev_evolution: [{
+			num: '133',
+			name: 'Eevee',
+		}, ],
 	},
 	{
 		id: 136,
@@ -3166,12 +2930,10 @@ var pokemons = [
 		spawn_time: '07:02',
 		multipliers: null,
 		weaknesses: ['Water', 'Ground', 'Rock'],
-		prev_evolution: [
-			{
-				num: '133',
-				name: 'Eevee',
-			},
-		],
+		prev_evolution: [{
+			num: '133',
+			name: 'Eevee',
+		}, ],
 	},
 	{
 		id: 137,
@@ -3205,12 +2967,10 @@ var pokemons = [
 		spawn_time: '10:23',
 		multipliers: [2.12],
 		weaknesses: ['Electric', 'Grass', 'Fighting', 'Ground'],
-		next_evolution: [
-			{
-				num: '139',
-				name: 'Omastar',
-			},
-		],
+		next_evolution: [{
+			num: '139',
+			name: 'Omastar',
+		}, ],
 	},
 	{
 		id: 139,
@@ -3227,12 +2987,10 @@ var pokemons = [
 		spawn_time: '05:04',
 		multipliers: null,
 		weaknesses: ['Electric', 'Grass', 'Fighting', 'Ground'],
-		prev_evolution: [
-			{
-				num: '138',
-				name: 'Omanyte',
-			},
-		],
+		prev_evolution: [{
+			num: '138',
+			name: 'Omanyte',
+		}, ],
 	},
 	{
 		id: 140,
@@ -3250,12 +3008,10 @@ var pokemons = [
 		spawn_time: '00:05',
 		multipliers: [1.97, 2.37],
 		weaknesses: ['Electric', 'Grass', 'Fighting', 'Ground'],
-		next_evolution: [
-			{
-				num: '141',
-				name: 'Kabutops',
-			},
-		],
+		next_evolution: [{
+			num: '141',
+			name: 'Kabutops',
+		}, ],
 	},
 	{
 		id: 141,
@@ -3272,12 +3028,10 @@ var pokemons = [
 		spawn_time: '23:40',
 		multipliers: null,
 		weaknesses: ['Electric', 'Grass', 'Fighting', 'Ground'],
-		prev_evolution: [
-			{
-				num: '140',
-				name: 'Kabuto',
-			},
-		],
+		prev_evolution: [{
+			num: '140',
+			name: 'Kabuto',
+		}, ],
 	},
 	{
 		id: 142,
@@ -3375,8 +3129,7 @@ var pokemons = [
 		spawn_time: '06:41',
 		multipliers: [1.83, 1.84],
 		weaknesses: ['Ice', 'Dragon', 'Fairy'],
-		next_evolution: [
-			{
+		next_evolution: [{
 				num: '148',
 				name: 'Dragonair',
 			},
@@ -3402,18 +3155,14 @@ var pokemons = [
 		spawn_time: '11:57',
 		multipliers: [2.05],
 		weaknesses: ['Ice', 'Dragon', 'Fairy'],
-		prev_evolution: [
-			{
-				num: '147',
-				name: 'Dratini',
-			},
-		],
-		next_evolution: [
-			{
-				num: '149',
-				name: 'Dragonite',
-			},
-		],
+		prev_evolution: [{
+			num: '147',
+			name: 'Dratini',
+		}, ],
+		next_evolution: [{
+			num: '149',
+			name: 'Dragonite',
+		}, ],
 	},
 	{
 		id: 149,
@@ -3430,8 +3179,7 @@ var pokemons = [
 		spawn_time: '23:38',
 		multipliers: null,
 		weaknesses: ['Ice', 'Rock', 'Dragon', 'Fairy'],
-		prev_evolution: [
-			{
+		prev_evolution: [{
 				num: '147',
 				name: 'Dratini',
 			},
