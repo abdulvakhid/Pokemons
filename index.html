@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
     <title>85-dars</title>
 </head>
+
 <body class="bg-info">
     <main>
-        
+
         <section>
             <h1 class="visually-hidden">pokemon</h1>
             <section>
                 <h2 class="visually-hidden">pokemon</h2>
                 <div class="container">
-                    <p class="display-3 text-white text-center mt-3">POKEMON CARDS</p>
+                    <p class="display-3 text-white text-center mt-3 mb-5">POKEMON CARDS</p>
+                    <form class="pokemon-form d-flex">
+                        <input class="form-control me-2 search-input" type="search" name="search" aria-label="search"
+                            placeholder="search">
+                        <select class="form-select me-2" id="weakness" name="weakness">
+                            <option value="all">All weakness</option>
+                        </select>
+                        <!-- <select class="form-select me-2" id="type" name="type">
+                            <option value="all">All Types</option>
+                        </select> -->
+                        <select class="form-select sorting me-2" name="sorting">
+                            <option value="a_z">A-Z</option>
+                            <option value="z_a">Z-A</option>
+                            <option value="low_high">Candy count: low to high</option>
+                            <option value="high_low">Candy count: high to low</option>
+                            <option value="light_heavy">Weight: light to heavy</option>
+                            <option value="heavy_light">weight: heavy to light</option>
+                        </select>
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
                     <div class="box mt-5">
                         <ul class="list list-unstyled row justify-content-center">
-                            
+
                         </ul>
                     </div>
                 </div>
             </section>
-        </main>
-        
-        <template class="template">
-            <li class="item d-flex flex-column align-items-center col-md-3 m-1 bg-success bg-gradient position-relative rounded-4">
-                <span class="number badge bg-danger bg-gradient position-absolute"></span>
-                <strong class="name mt-4 text-white"></strong>
-                <img class="img" alt="pokemon img">
-                <strong class="candy-name mb-5 text-white"></strong>
-                <time class="time position-absolute bottom-0 badge bg-primary bg-gradient" datetime="2022-02-02"></time>
-            </li>
-        </template>
-        
-        <script src="./pokemons.js"></script>
-        <script src="./main.js"></script>
-    </body>
-    </html>
+    </main>
+
+    <template class="template">
+        <li class="item d-flex flex-column align-items-center col-md-2 m-1 p-3 px-4 bg-success bg-gradient position-relative rounded-4 justify-content-center">
+            <span class="position-absolute top-0  idnum badge border-danger bg-danger"></span>
+            <span class="number badge bg-danger bg-gradient position-absolute"></span>
+            <strong class="name mt-3 text-white"></strong>
+            <img class="img" alt="pokemon img">
+            <p class="candy-name mb-2 mt-2 text-white textauto"></p>
+            <p class="type mb-3 text-white"></p>
+            <span class="time  badge bg-primary bg-gradient position-absolute bottom-0 mb-2 end-0 me-2"></span>
+            <span class="d-inline-block weight position-absolute bottom-0 mb-2 mt-2 text-white"></span>
+        </li>
+    </template>
+
+    <script src="./pokemons.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,66 +1,148 @@
+// dom elementlari
+const elForm = document.querySelector(".pokemon-form");
+const elInput = elForm.querySelector(".search-input");
+const elSelectWeakness = elForm.querySelector("#weakness");
+const elSelectType = elForm.querySelector("#type");
+const elSelectSorting = elForm.querySelector(".sorting");
+const elList = document.querySelector(".list");
+const weaknessLists = [];
+const typeList = [];
 
-// var elBox = document.querySelector(".box");
-// var newList = document.createElement("ul");
-
-
-
-// for (var pokemon of pokemons) {
-//     var newItem = document.createElement("li");
-//     var newNum = document.createElement("span");
-//     var newName = document.createElement("strong");
-//     var newImg = document.createElement("img");
-//     var newCandyName = document.createElement("strong");
-//     var newTime = document.createElement("time");
-    
-//     newNum.textContent = pokemon.num;
-//     newName.textContent = pokemon.name;
-//     newImg.src = pokemon.img;
-//     newImg.width = "150";
-//     newImg.height = "150";
-//     newImg.alt = "Pokemon img";
-//     newCandyName.textContent = pokemon.candy;
-//     newTime.textContent = pokemon.spawn_time;
-    
-//     newList.classList.add("list-unstyled", "row", "justify-content-center",);
-//     newItem.classList.add("d-flex", "flex-column", "align-items-center" ,"col-md-3","m-1", "bg-success", "position-relative", "rounded-4",);
-//     newNum.classList.add("badge", "bg-danger", "position-absolute", );
-//     newName.classList.add("mt-4", "text-white");
-//     newCandyName.classList.add("mb-5", "text-white");
-//     newTime.classList.add("position-absolute", "bottom-0", "badge", "bg-primary", );
-    
-//     newItem.appendChild(newNum);
-//     newItem.appendChild(newName);
-//     newItem.appendChild(newImg);
-//     newItem.appendChild(newCandyName);
-//     newItem.appendChild(newTime);
-//     newList.appendChild(newItem);
-//     elBox.appendChild(newList);
-    
-// }
-
-
-
-
-// with fragment 
-
-let elList = document.querySelector(".list");
-let fragment = new DocumentFragment();
-
+// template 
 let elTemplate = document.querySelector(".template").content;
 
-for (const pokemon of pokemons) {
-    
-    let cloneTemplate = elTemplate.cloneNode(true);
+// weaknessni yig'ib oluvchi funksiya
+function collectWeakness() {
+    pokemons.forEach(item => {
+        const findWeakness = item.weaknesses;
 
-    cloneTemplate.querySelector(".item");
-    cloneTemplate.querySelector(".number").textContent = pokemon.number;
-    cloneTemplate.querySelector(".name").textContent = pokemon.name;
-    cloneTemplate.querySelector(".img").src = pokemon.img;
-    cloneTemplate.querySelector(".candy-name").textContent = pokemon.candy;
-    cloneTemplate.querySelector("time").textContent = pokemon.spawn_time;
+        findWeakness.forEach(element => {
+            if (!weaknessLists.includes(element)) {
+                weaknessLists.push(element);
+            }
+        });
+    });
+    weaknessLists.sort();
+};
 
-    fragment.appendChild(cloneTemplate);
+// selectga render qiluvchi funksiya
+function showWeakness() {
+    const newFragment = document.createDocumentFragment();
+    weaknessLists.forEach(item => {
+        const newOption = document.createElement("option");
 
+        newOption.textContent = item;
+        newOption.value = item;
+        newFragment.appendChild(newOption);
+    });
+    elSelectWeakness.appendChild(newFragment);
 }
 
-elList.appendChild(fragment);
+// TYPE larni yig'uvchi funksiya
+// function collectType() {
+//     pokemons.forEach(item => {
+
+//         const findType = item.type;
+//         findType.forEach(element => {
+//             if (!typeList.includes(element)) {
+//                 typeList.push(element);
+//             }
+//         });
+//     });
+//     typeList.sort();
+// };
+
+// typelarni render qiluvci funksiya
+// function showType() {
+//     const typeFragment = document.createDocumentFragment();
+
+//     typeList.forEach(item => {
+//         const newOption = document.createElement("option");
+
+//         newOption.textContent = item;
+//         newOption.value = item;
+//         typeFragment.appendChild(newOption);
+//     });
+//     elSelectType.appendChild(typeFragment);
+// };
+
+// pokemonni render qiluvchi funksiya
+function showPokemons(pokemons, titleRegex = "") {
+    elList.innerHTML = "";
+    const fragment = new DocumentFragment();
+
+    for (const pokemon of pokemons) {
+
+        let cloneTemplate = elTemplate.cloneNode(true);
+
+        cloneTemplate.querySelector(".idnum").textContent = pokemon.num;
+        cloneTemplate.querySelector(".number").textContent = pokemon.number;
+
+        if (titleRegex.source !== "(?:)" && titleRegex) {
+            cloneTemplate.querySelector(".name").innerHTML = pokemon.name.replace(titleRegex,
+                `<mark class="bg-warning"> ${titleRegex.source}</mark>`);
+        } else {
+            cloneTemplate.querySelector(".name").textContent = pokemon.name;
+        }
+        cloneTemplate.querySelector(".img").src = pokemon.img;
+        cloneTemplate.querySelector(".candy-name").textContent = pokemon.weaknesses;
+        cloneTemplate.querySelector(".type").textContent = pokemon.type;
+        cloneTemplate.querySelector(".weight").textContent = pokemon.weight;
+        cloneTemplate.querySelector(".time").textContent = pokemon.candy_count;
+
+        fragment.appendChild(cloneTemplate);
+    }
+    elList.appendChild(fragment);
+};
+
+// search qiluvchi funksiya
+function searchPokemon(item) {
+    return pokemons.filter(element => {
+        return element.name.match(item) && (elSelectWeakness.value === "all" || element.weaknesses.includes(elSelectWeakness.value))
+        //  &&    (elSelectType.value === "all" || element.type.includes(elSelectType.value))
+    });
+};
+
+// sorting function
+function sorting(sorted, type) {
+    if (type === "a_z") {
+        sorted.sort((a, b) => a.name.charCodeAt(0) - b.name.charCodeAt(0));
+    } else if (type === "z_a") {
+        sorted.sort((a, b) => b.name.charCodeAt(0) - a.name.charCodeAt(0));
+    } else if (type === "low_high") {
+        sorted.sort((a, b) => a.candy_count - b.candy_count);
+    } else if (type === "high_low") {
+        sorted.sort((a, b) => b.candy_count - a.candy_count);
+    } else if (type === "light_heavy") {
+        sorted.sort((a, b) => a.weight.split(" ")[0] - b.weight.split(" ")[0]);
+    } else if (type === "heavy_light") {
+        sorted.sort((a, b) => b.weight.split(" ")[0] - a.weight.split(" ")[0]);
+    }
+};
+
+elForm.addEventListener("submit", function (evt) {
+    evt.preventDefault();
+
+    const searchElement = new RegExp(elInput.value.trim(), `gi`);
+    const searchlist = searchPokemon(searchElement);
+
+    const sortFunction = pokemons.filter(item => item.candy_count);
+    if (elSelectSorting.value == "low_high" || elSelectSorting.value == "high_low") {
+        sorting(sortFunction, elSelectSorting.value);
+        showPokemons(sortFunction, searchElement)
+    } else {
+        if (searchlist.length > 0) {
+            sorting(searchlist, elSelectSorting.value);
+            showPokemons(searchlist, searchElement)
+        } else {
+            alert("NOT FOUND");
+        }
+    }
+
+});
+
+collectWeakness();
+showWeakness();
+// collectType();
+// showType();
+showPokemons(pokemons);
