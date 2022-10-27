@@ -106,9 +106,9 @@ function searchPokemon(item) {
 // sorting function
 function sorting(sorted, type) {
     if (type === "a_z") {
-        sorted.sort((a, b) => a.name.charCodeAt(0) - b.name.charCodeAt(0));
+        sorted.sort((a, b) => a.name.localeCompare(b.name));
     } else if (type === "z_a") {
-        sorted.sort((a, b) => b.name.charCodeAt(0) - a.name.charCodeAt(0));
+        sorted.sort((a, b) => b.name.localeCompare(a.name));
     } else if (type === "low_high") {
         sorted.sort((a, b) => a.candy_count - b.candy_count);
     } else if (type === "high_low") {
